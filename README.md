@@ -2,4 +2,4 @@
 Quick install and use manual of Alibaba JStorm
 
 ## Table of Contents
-- install.md
+- [install.md](https://github.com/hammertank/jstorm-manual)
