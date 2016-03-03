@@ -3,6 +3,9 @@
 JStorm 2.1.0
 ## 安装 ##
 安装步骤参照[官方文档](https://github.com/alibaba/jstorm/wiki/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85)
+
+jstorm-ui-2.1.0.war中WEB-INF/lib目录下的servlet-api-2.5.jar与tomcat自带的servlet-api.jar冲突。部署前需要先将其从war包中删除。
+
 ## 配置 ##
 ### 最简配置 ###
 在安装包内storm.yaml基础上修改：
@@ -84,6 +87,10 @@ JStorm 2.1.0
 
 - storm.messaging.transport: 默认值是"com.alibaba.jstorm.message.netty.NettyContext"，要改为"com.alibaba.jstorm.message.zeroMq.MQContext"
 - java.library.path: Zeromq 和java zeromq library的安装目录，默认"/usr/local/lib:/opt/local/lib:/usr/lib"
+
+### JStorm On Yarn ###
+目前jstorm-yarn项目版本还是1.0-SNAPSHOT，无法基于jstorm-core 2.1.0版本代码运行。
+官方暂时也没有放出配置和使用文档。
 
 ### storm.xml样例 ###
 	########### These MUST be filled in for a storm configuration
