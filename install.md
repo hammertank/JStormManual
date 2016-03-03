@@ -55,6 +55,7 @@ JStorm 2.1.0
 - supervisor.slots.ports: null	
 
 配置每个supervisor下可用于启动woker的slot的方式有2种：
+
 1. 手动指定
 
  		supervisor.slots.ports:
