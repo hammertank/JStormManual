@@ -92,7 +92,10 @@ jstorm-ui-2.1.0.war中WEB-INF/lib目录下的servlet-api-2.5.jar与tomcat自带�
 目前jstorm-yarn项目版本还是1.0-SNAPSHOT，无法基于jstorm-core 2.1.0版本代码运行。
 官方暂时也没有放出配置和使用文档。
 
-### storm.xml样例 ###
+## 其他 ##
+可以通过设置JSTORM\_CONF\_DIR 自定义 JStrom 配置文件目录的路径
+
+## storm.yaml样例 ##
 	########### These MUST be filled in for a storm configuration
 	 storm.zookeeper.servers:
 	     - "node3"
@@ -183,6 +186,3 @@ jstorm-ui-2.1.0.war中WEB-INF/lib目录下的servlet-api-2.5.jar与tomcat自带�
 	#             [ "localhost"],
 	#         zkPort: 2181,
 	#       }
-
-## 其他 ##
-可以通过设置JSTORM\_CONF\_DIR 自定义 JStrom 配置文件目录的路径
